@@ -70,7 +70,7 @@ class Window:
 
                 if np.sum(mask) > 5000000:
                     print(f'Accept button found..? Trying to accept.')
-                    pyautogui.moveTo(self.found_windows[self.window_hwnd]['x'] + (self.found_windows[self.window_hwnd]['w'] // 2),
+                    pyautogui.click(self.found_windows[self.window_hwnd]['x'] + (self.found_windows[self.window_hwnd]['w'] // 2),
                                      self.found_windows[self.window_hwnd]['y'] + (self.found_windows[self.window_hwnd]['h'] // 2) - 90)
             else:
                 print(f'CS2 Window not found, waiting...')
