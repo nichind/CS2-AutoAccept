@@ -4,12 +4,9 @@ import os
 import winsound
 
 
-class Press:
-    def __init__(self):
-        self.last = ''
-
-
 press = Press()
+
+
 def on_press(key):
     if str(key) == "'\\x07'":
         winsound.Beep(300, 200) # don't get scared lol.
